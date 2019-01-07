@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://192.168.56.130:3306/dirsir?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false&allowMultiQueries=true
+    username: root
+    password: root
+  redis:
+    cluster:
+      nodes: 192.168.56.130:7001,192.168.56.130:7002,192.168.56.130:7003,192.168.56.130:7004,192.168.56.130:7005,192.168.56.130:7006
+  data:
+    solr:
+      host: http://127.0.0.1:8080/solr
+mybatis:
+  config-location: classpath:mybatis-config.xml
+  mapper-locations: classpath:mapper/*/*Mapper.xml
+
+
