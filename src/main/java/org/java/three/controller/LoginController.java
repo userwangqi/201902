@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class LoginController {
     @RequestMapping("/login")
     private  String longinGo(){
-        //2222
+        //2222//333
         System.out.println("login");
         return  "/three/login";
     }
